@@ -9,10 +9,31 @@ const name = 'Mario';
 
 
 // Dichiara la funzione qui.
+function salutoPlus(name) {
+    let currentDate = new Date();
+    let hours = currentDate.getHours();
+    // currentDate.getHours(); <---Per prendere l'ora corrente
 
+    if (hours <= 13) {
+        console.log("Buongiorno " + name);
+
+    }else if (hours <= 17) {
+        console.log("Buon pomerigio " + name);
+        
+    }else {
+        console.log("Buona sera " + name);
+        
+    }
+
+
+
+
+
+
+}
 
 // Invoca la funzione qui e stampa il risultato in console
 
-
+salutoPlus(name);
 
 //Risultato atteso se si passa 'Mario' alle 18: // Buonasera Mario.
